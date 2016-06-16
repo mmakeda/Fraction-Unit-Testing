@@ -87,18 +87,25 @@ namespace FractionTestProject
 
             }
 
-            
-
             [TestMethod]
-            public void LessThanToTestMethod()
+            public void GreaterThanOrEqualToTestMethod()
             {
                 Fraction f1 = new Fraction("1/2");
                 Fraction f2 = new Fraction(1, 3);
                 
-                Assert.IsTrue(f1 <= f2);
+                Assert.IsTrue(f1 >= f2);
 
             }
+        [TestMethod]
+        public void LessThanOrEqualToTestMethod()
+        {
+            Fraction f1 = new Fraction("1/2");
+            Fraction f2 = new Fraction(1, 3);
+
+            Assert.IsTrue(f1 <= f2);
+
         }
+    }
 
     }
 
